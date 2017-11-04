@@ -1,5 +1,6 @@
-# coding： uft-8
-s='ab'
+# coding=utf-8
+s='ASD'
+# TODO 想打印任意的值
 print(len(s))
 
 
