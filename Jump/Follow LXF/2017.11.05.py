@@ -116,3 +116,43 @@ while n < 10:
     print(n)
 
 
+s1 = set([1, 1, 2, 2, 3, 3])
+print(s1)
+s2 = set([2, 3, 4])
+print(s1 & s2)
+print(s1 | s2)
+
+i = [1,2]
+
+t = set(i)
+print(t)
+
+
+s = {
+    'iven': 100,
+    'kven': 97,
+    'linus': 89,
+    'lary': 79,
+    'harri': 90,
+    'exit': 0xFFFFFFFF,
+}
+for d in s:
+    print(d)
+print('输入你的需要查找的姓名:')
+
+while 1:
+    name = input()
+    ssd = s.get(name, False)
+    if ssd == False:
+        print('搜索结果:您输入的名字不存在!\n')
+    else:
+        x = int(s[name])
+        if x == 0xFFFFFFFF:
+            print('退出查询系统')
+            break
+        else:
+            print(
+                name,
+                '同学你好,你的分数是:',
+                x,
+            )
